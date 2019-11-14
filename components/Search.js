@@ -111,6 +111,14 @@ export default class Search extends React.Component {
 		return sortedResults;
 	}
 
+	handleClear = () => {
+		this.setState({
+			showSearch: true,
+			enableBtn: false,
+			showWhat: ""
+		});
+	}
+
 	render() {
 		// console.log('state', this.state);
 
